@@ -20,11 +20,9 @@ Route::get('/', function () {
 
 // ROUTES TIMES
 Route::resource('/times', TimeController::class)->only([
-    'index', 'show'
+    'index', 'show', 'create', 'store'
 ]);
 // ROUTES TIMES
-
-//Route::get('/times', [TimeController::class, 'index']);
 
 Auth::routes();
 

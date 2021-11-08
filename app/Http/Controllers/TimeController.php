@@ -31,7 +31,7 @@ class TimeController extends Controller
      */
     public function create()
     {
-        //
+        return view('createTimes');
     }
 
     /**
@@ -42,7 +42,17 @@ class TimeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       $cadastroTime = $this -> objTime -> create([
+            'name' => $request -> name,
+            'twitter' => $request -> twitter,
+            'instagram' => $request -> instagram,
+            'wordlranking' => $request -> wordlranking,
+            'weekstop30' => $request -> weekstop30
+        ]);
+
+        if($cadastroTime) {
+            return redirect('times');
+        }
     }
 
     /**
