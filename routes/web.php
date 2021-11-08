@@ -18,7 +18,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/time', [TimeController::class, 'index']);
+// ROUTES TIMES
+Route::resource('/times', TimeController::class)->only([
+    'index', 'show'
+]);
+// ROUTES TIMES
+
+//Route::get('/times', [TimeController::class, 'index']);
 
 Auth::routes();
 

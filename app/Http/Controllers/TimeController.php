@@ -20,7 +20,7 @@ class TimeController extends Controller
      */
     public function index()
     {
-        $time = $this -> objTime -> all();
+        $time = $this -> objTime -> all() ->sortBy('name');
         return view('times', compact('time'));
     }
 
@@ -53,7 +53,8 @@ class TimeController extends Controller
      */
     public function show($id)
     {
-        //
+        $time = $this -> objTime -> find($id);
+        return view('showTimes', compact('time'));
     }
 
     /**

@@ -4,16 +4,23 @@
 
     <h1 class="text-center">Times</h1> <hr>
 
-    <div class="col-8 m-auto">
-        <table class="table">
-            <thead>
+    <div class="text-center">
+        <a href="">
+            <button class="btn btn-success mt-3 mb-4">Cadastrar</button>
+        </a>
+    </div>
+
+    <div class="col-12 m-auto">
+        <table class="table text-center">
+            <thead class="thead-dark">
               <tr>
                 <th scope="col">Id</th>
                 <th scope="col">Name</th>
                 <th scope="col">Wordl Ranking</th>
                 <th scope="col">Weeks in top30</th>
                 <th scope="col">Twitter</th>
-                <th scope="col">Snstagram</th>
+                <th scope="col">Instragram</th>
+                <th scope="col">Ações</th>
               </tr>
             </thead>
             <tbody>
@@ -26,7 +33,17 @@
                     <td>{{$times -> weekstop30}}</td>
                     <td>{{$times -> twitter}}</td>
                     <td>{{$times -> instagram}}</td>
-
+                    <td>
+                        <a href="{{url("times/$times->id")}}">
+                            <button class="btn btn-dark">Visualizar</button>
+                        </a>
+                        <a href="">
+                            <button class="btn btn-primary">Editar</button>
+                        </a>
+                        <a href="">
+                            <button class="btn btn-danger">Deletar</button>
+                        </a>
+                    </td>
                 </tr>
                 @endforeach
 
