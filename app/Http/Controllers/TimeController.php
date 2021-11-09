@@ -93,7 +93,6 @@ class TimeController extends Controller
             'name' => $request -> name,
             'twitter' => $request -> twitter,
             'instagram' => $request -> instagram,
-            'image' => $request -> image,
             'wordlranking' => $request -> wordlranking,
             'weekstop30' => $request -> weekstop30
         ]);

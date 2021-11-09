@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 08-Nov-2021 às 23:10
+-- Tempo de geração: 09-Nov-2021 às 22:49
 -- Versão do servidor: 5.7.31
 -- versão do PHP: 7.4.9
 
@@ -115,22 +115,17 @@ CREATE TABLE IF NOT EXISTS `time` (
   `wordlranking` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `weekstop30` int(11) NOT NULL,
   `instagram` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `image` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Extraindo dados da tabela `time`
 --
 
-INSERT INTO `time` (`id`, `name`, `twitter`, `wordlranking`, `weekstop30`, `instagram`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Natus Vincere', 'https://twitter.com/natusvincere', '#1', 128, 'https://www.instagram.com/natus_vincere_official/', '', NULL, NULL),
-(2, 'G2', 'https://twitter.com/G2esports', '#2', 110, 'https://www.instagram.com/g2esports/', '', NULL, NULL),
-(3, 'Gambit', 'https://twitter.com/GambitEsports', '#3', 70, 'https://www.instagram.com/gambitesports/', NULL, '2021-11-09 00:16:25', '2021-11-09 00:16:25'),
-(4, 'NIP', 'https://twitter.com/nipcs', '#4', 77, 'https://www.instagram.com/accounts/login/', NULL, '2021-11-09 00:19:01', '2021-11-09 00:19:01'),
-(5, 'Heroic', 'https://twitter.com/heroicgg', '#5', 82, 'https://www.instagram.com/accounts/login/', NULL, '2021-11-09 01:01:58', '2021-11-09 01:01:58');
+INSERT INTO `time` (`id`, `name`, `twitter`, `wordlranking`, `weekstop30`, `instagram`, `created_at`, `updated_at`) VALUES
+(14, 'Gambit', 'https://twitter.com/GambitEsports', '#3', 707, 'https://www.instagram.com/gambitesports/', '2021-11-10 01:47:09', '2021-11-10 01:49:30');
 
 -- --------------------------------------------------------
 
