@@ -18,11 +18,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// ROUTES TIMES
+// ROUTE TIMES
 Route::resource('/times', TimeController::class)->only([
-    'index', 'show', 'create', 'store', 'edit', 'update'
+    'index', 'show', 'create', 'store', 'edit', 'update', 'destroy'
 ]);
-// ROUTES TIMES
+// ROUTE TIMES
 
 Auth::routes();
 

@@ -22,7 +22,7 @@
             <form name="formCadTime" id="FormCadTime" method="post" action="{{url("times")}}">
         @endif
                 @csrf
-                <input class="form-control" type="text" name="name" id="name" placeholder="Nome do Time" value="{{$time->name}}" require> <br>
+                <input class="form-control" type="text" name="name" id="name" placeholder="Nome do Time" value="{{$time->name ?? ''}}" require> <br>
                 <input class="form-control" type="text" name="twitter" id="twitter" placeholder="Twitter" value="{{$time->twitter ?? ''}}" require> <br>
                 <input class="form-control" type="text" name="instagram" id="instagram" placeholder="Instagram" value="{{$time->instagram ?? ''}}" require> <br>
                 <input class="form-control" type="text" name="wordlranking" id="wordlranking" placeholder="Wordl Ranking" value="{{$time->wordlranking ?? ''}}" require> <br>

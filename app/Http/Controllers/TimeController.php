@@ -108,6 +108,7 @@ class TimeController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $del = $this -> objTime -> destroy($id);
+        return ($del) ? "Sim" : "Não";
     }
 }
