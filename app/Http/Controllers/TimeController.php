@@ -43,7 +43,7 @@ class TimeController extends Controller
      */
     public function store(TimeRequest $request)
     {
-       $cadastroTime = $this -> objTime -> create([
+        $cadastroTime = $this -> objTime -> create([
             'name' => $request -> name,
             'twitter' => $request -> twitter,
             'instagram' => $request -> instagram,
@@ -93,6 +93,7 @@ class TimeController extends Controller
             'name' => $request -> name,
             'twitter' => $request -> twitter,
             'instagram' => $request -> instagram,
+            'image' => $request -> image,
             'wordlranking' => $request -> wordlranking,
             'weekstop30' => $request -> weekstop30
         ]);

@@ -16,7 +16,7 @@
         @endif
 
         @if(isset($time))
-            <form name="formEditTime" id="FormEditTime" method="post" action="{{url("times/$time->id")}}">
+            <form name="formEditTime" id="FormEditTime" method="post" enctype="multipart/form-data" action="{{url("times/$time->id")}}">
                 @method('PUT')
         @else
             <form name="formCadTime" id="FormCadTime" method="post" action="{{url("times")}}">

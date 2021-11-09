@@ -39,7 +39,7 @@ class TimeRequest extends FormRequest
             'twitter.required' => 'Informe o Twitter do time',
             'instagram.required' => 'Informe o Instagram do time',
             'wordlranking.required' => 'Informe a posição no ranking mundial',
-            'weekstop30.required' => 'Informe quantos dias o time ficou no top 30'
+            'weekstop30.required' => 'Informe quantos dias o time ficou no top 30',
         ];
     }
 }
