@@ -76,7 +76,8 @@ class TimeController extends Controller
      */
     public function edit($id)
     {
-        //
+        $time = $this -> objTime -> find($id);
+        return view('createTimes', compact('time'));
     }
 
     /**
@@ -88,7 +89,15 @@ class TimeController extends Controller
      */
     public function update(TimeRequest $request, $id)
     {
-        //
+        $this -> objTime -> where(['id' => $id]) -> update([
+            'name' => $request -> name,
+            'twitter' => $request -> twitter,
+            'instagram' => $request -> instagram,
+            'wordlranking' => $request -> wordlranking,
+            'weekstop30' => $request -> weekstop30
+        ]);
+
+        return redirect('times');
     }
 
     /**
