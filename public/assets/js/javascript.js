@@ -7,7 +7,7 @@
         event.preventDefault();
         //console.log(event.target.parentNode.href);
         let token=doc.getElementsByName("_token")[0].value;
-        if(confirm("Deseja mesmo apagar?")){
+        if(confirm("Deseja deletar o time ?")){
            let ajax=new XMLHttpRequest();
            ajax.open("DELETE",event.target.parentNode.href);
            ajax.setRequestHeader('X-CSRF-TOKEN',token);
