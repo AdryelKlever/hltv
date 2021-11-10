@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SessionController;
 use App\Http\Controllers\TimeController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,6 +24,8 @@ Route::resource('/times', TimeController::class)->only([
     'index', 'show', 'create', 'store', 'edit', 'update', 'destroy'
 ]);
 // ROUTE TIMES
+
+Route::get('session', [SessionController::class, 'session']);
 
 Auth::routes();
 

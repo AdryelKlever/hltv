@@ -11,9 +11,14 @@
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
+
                         </div>
                     @endif
                 </div>
+
+                @php
+                    //var_dump(Session::all(), session() -> all());
+                @endphp
 
             </div>
         </div>
