@@ -71,6 +71,11 @@
                             <li class="nav-item">
                               <a class="nav-link active"> {{ Auth::user()->name }} </a>
                             </li>
+
+                            <li class="nav-item">
+                                <a href="{{url("times")}}" class="nav-link active"> Times </a>
+                            </li>
+
                             <li class="nav-item">
                                 <a class="nav-link active" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
